@@ -40,6 +40,9 @@ h6 {
 	background: transparent;
 	z-index: 1030;
 }
+.navbar-color {
+	background:  linear-gradient(to left, #7a60ff, #cd9ffa);
+}
 .navbar .active {
 	color: #5f0099 !important;
 }

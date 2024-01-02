@@ -45,10 +45,10 @@ export const Layout = () => {
             
         {/* Navbar */}
 
-        <nav className="navbar navbar-expand-lg shadow">
+        <nav className={`navbar navbar-expand-lg ${location.pathname === `/` ? `navbar` : `navbar-color`} `}>
             <div className="container"> 
                 <a className="navbar-brand navbar-logo" href="#"> 
-                    <img src={location.pathname === `/` ? logo :logoBlack }  alt="logo" className="logo-1" /> 
+                    <img src={ logo }  alt="logo" className="logo-1" /> 
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <FontAwesomeIcon icon={faBars} /> </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
