@@ -7,7 +7,7 @@ export const Testimonial = () => {
     <div className="row">
       <div className="col-md-12">
         <div className="sectioner-header text-center white">
-          <h3>Testimonials</h3>
+          <h1>Testimonials</h1>
           <span className="line"></span>
           <p className="white">Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
         </div>

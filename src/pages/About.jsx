@@ -9,7 +9,7 @@ export const About = () => {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">
-                    <h3>About</h3>
+                    <h1>About</h1>
                     <span className="line"></span>
                     <p>Welcome to Cajitech – where innovation meets purpose. At Cajitech, we're not just a company; we're a community driven by the relentless pursuit of excellence. Our story unfolds in the intersection of technology and human values, crafting solutions that resonate with impact. We take pride in our diverse talents, united in a shared commitment to redefine possibilities. Rooted in integrity and powered by passion, Cajitech is more than a name – it's a promise to deliver cutting-edge solutions with a human touch. Join us in shaping the future, where every idea is a catalyst for transformation.</p>
                     </div>

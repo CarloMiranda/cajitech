@@ -10,7 +10,7 @@ export const Works = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="sectioner-header text-center">
-                        <h3>Explore Our Masterpieces</h3>
+                        <h1>Explore Our Masterpieces</h1>
                         <span className="line"></span>
                         <p>Step into a realm of innovation and creativity as you explore our latest works. Each project is a testament to our commitment to excellence, showcasing unique solutions that redefine industry standards. Dive into a world where imagination meets expertise, and discover the extraordinary in every detail.</p>
                         </div>

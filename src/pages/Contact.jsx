@@ -9,9 +9,9 @@ export const Contact = () => {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">
-                    <h3>Contact us</h3>
+                    <h1>Get in Touch</h1>
                     <span className="line"></span>
-                    <h5>Get in Touch – We'd Love to Hear from You!</h5>
+                    <h5>We'd Love to Hear from You!</h5>
                     <p>Have questions, feedback, or just want to say hello? We're here and ready to listen. Your thoughts matter, and we're committed to providing the best possible experience for you. Reach out to us via the form below, and we'll get back to you as soon as possible. Thank you for choosing [Your Brand]. We appreciate your trust and look forward to connecting with you!</p>
                     </div>
                     <div className="section-content">

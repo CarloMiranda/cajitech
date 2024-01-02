@@ -7,7 +7,7 @@ export const Team = () => {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">
-                    <h3>Our Team</h3>
+                    <h1>Our Team</h1>
                     <span className="line"></span>
                     <p>Discover the heart of Cajitech through our exceptional team. United by expertise and passion, we bring diverse talents together to drive innovation and deliver outstanding solutions. Committed to excellence, each team member contributes to the Cajitech journey with creativity and dedication. Meet the faces behind our success and explore the collaborative spirit that defines us. We're here to serve you, connecting innovation with a personalized touch.</p>
                     </div>
