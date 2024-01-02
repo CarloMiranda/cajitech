@@ -9,7 +9,7 @@ export const Faq = () => {
                     <div className="sectioner-header text-center">
                     <h3>Frequently Asked Questions</h3>
                     <span className="line"></span>
-                    <p>We understand that you may have questions about our Service. To make things easier for you, we've compiled a list of frequently asked questions. Take a look below for quick answers to common queries. If you don't find what you're looking for, don't hesitate to contact our support team. We're here to assist you on your Cajitech journey. Your satisfaction is our priority</p>
+                    <p>We understand that you may have questions about our Service. To make things easier for you, we've compiled a list of frequently asked questions. Take a look below for quick answers to common queries. If you don't find what you're looking for, don't hesitate to contact our support team. We're here to assist you on your Cajitech journey. Your satisfaction is our priority.</p>
                     </div>
                     <div className="section-content">
                     <div className="row">

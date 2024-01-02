@@ -6,12 +6,13 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 import { About } from './About';
-import { Projects } from './Features';
+import { Features } from './Features';
 import { Team } from './Team';
 import { Testimonial } from './Testimonial';
 import { Faq } from './Faq';
 import { Contact } from './Contact';
 import { Footer } from './Footer';
+import { Works } from './Works';
 
 
 export const Layout = () => {
@@ -104,7 +105,10 @@ export const Layout = () => {
 
 
             {/* Features Start */}
-                < Projects />
+                < Features />
+
+            {/* Works     */}
+                < Works />
 
             {/* Team Start */}
                 < Team />

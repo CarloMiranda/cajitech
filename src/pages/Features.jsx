@@ -1,6 +1,6 @@
 
 
-export const Projects = () => {
+export const Features = () => {
 
     return(
         <section className="feature section-padding" data-scroll-index='2'>

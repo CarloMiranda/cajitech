@@ -216,6 +216,43 @@ h6 {
 	color:#ffffff;
 	text-decoration:none;
 }
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(152, 151, 149, 0.8),
+                 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img, .img-wrapper > .content {
+    transition: 1500ms ease-in-out;
+}
+
+.img-wrapper:hover > img {transform: scale(1.4);}
+
+.work-btn {
+	border: #8e1efc 2px solid;
+	color: #8e1efc;
+	padding: 10 10px;
+	border-radius: 5px;
+}
 .video-section {
 	background: url(images/video-bg.jpg) no-repeat fixed center;
 	background-size: cover;
