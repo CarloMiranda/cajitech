@@ -1,49 +1,43 @@
 import React, { useEffect } from 'react';
+import { Outlet, Link, useLocation } from "react-router-dom";
 import logo from '/public/images/logo.png';
 import logoBlack from '/public/images/logo-black.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
-import { About } from './About';
-import { Features } from './Features';
-import { Team } from './Team';
-import { Testimonial } from './Testimonial';
-import { Faq } from './Faq';
-import { Contact } from './Contact';
-import { Footer } from './Footer';
-import { Works } from './Works';
 
 
 export const Layout = () => {
-    // State for the video popup
-    // const [isVideoPopupVisible, setVideoPopupVisible] = useState(false);
+    
+    const location = useLocation();
 
   
-    // useEffect for scroll event listener
-    useEffect(() => {
-      const handleScroll = () => {
-        const bodyScroll = window.scrollY;
-        const navbar = document.querySelector(".navbar");
-        const navbarLogoImg = document.querySelector('.navbar-logo img');
-  
-        // Modify state or perform other actions based on scroll
-        if (bodyScroll > 50) {
-            navbarLogoImg.src = logoBlack;
-            navbar.classList.add("nav-scroll");
-          } else {
-            navbarLogoImg.src = logo;
-            navbar.classList.remove("nav-scroll");
-          }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      // Cleanup scroll event listener on component unmount
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+       
+        // useEffect for scroll event listener
+        useEffect(() => {
+        const handleScroll = () => {
+            const bodyScroll = window.scrollY;
+            const navbar = document.querySelector(".navbar");
+            const navbarLogoImg = document.querySelector('.navbar-logo img');
+            
+            // Modify state or perform other actions based on scroll
+            if (bodyScroll > 50 && location.pathname === `/` ) {
+                navbarLogoImg.src = logoBlack;
+                navbar.classList.add("nav-scroll");
+            } else {
+                navbarLogoImg.src = logo;
+                navbar.classList.remove("nav-scroll");
+            }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup scroll event listener on component unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+        }, []); 
 
 
     return(
@@ -51,21 +45,38 @@ export const Layout = () => {
             
         {/* Navbar */}
 
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg shadow">
             <div className="container"> 
                 <a className="navbar-brand navbar-logo" href="#"> 
-                    <img src={logo} alt="logo" className="logo-1" /> 
+                    <img src={location.pathname === `/` ? logo :logoBlack }  alt="logo" className="logo-1" /> 
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <FontAwesomeIcon icon={faBars} /> </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item"> <a className="nav-link" href="" data-scroll-nav="0">Home</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="1">About</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="4">Testimonials</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+                        <li className="nav-item">
+                            <Link to="/" className={` nav-link ${location.pathname === `/` ? `fw-bold active` : ``} `}>Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/about" className={` nav-link ${location.pathname === `/about` ? `fw-bold active` : ``}`}>About</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/features" className={` nav-link ${location.pathname === `/features` ? `fw-bold active` : ``}`}>Features</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/works" className={` nav-link ${location.pathname === `/works` ? `fw-bold active` : ``}`}>Our Works</Link> 
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/team" className={` nav-link ${location.pathname === `/team` ? `fw-bold active` : ``}`}>Team</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/testimonials" className={` nav-link ${location.pathname === `/testimonials` ? `fw-bold active` : ``}`}>Testimonials</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/faq" className={` nav-link ${location.pathname === `/faq` ? `fw-bold active` : ``}`}>Faq</Link> 
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/contact" className={` nav-link ${location.pathname === `/contact` ? `fw-bold active` : ``}`}>Contact</Link> 
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,60 +84,42 @@ export const Layout = () => {
 
          {/* End Navbar   */}
 
-
-         {/* Banner Start */}
-            <section className="banner" data-scroll-index='0'>
-            <div className="banner-overlay">
-                <div className="container">
-                <div className="row">
-                    <div className="col-md-8 col-sm-12">
-                    <div className="banner-text">
-                        <h2 className="white">Welcome to Cajitech's Creative Haven 🚀</h2>
-                        <h6 className="white">Transforming Ideas into Extraordinary Experiences</h6>
-                        <p className="banner-text white">Your vision, our passion! We specialize in crafting unique digital solutions tailored just for you. Explore our portfolio and let's embark on a journey to bring your dreams to life.</p>
-                        <p className="banner-text white">Ready to Elevate Your Brand? Let's Create Something Exceptional Together!</p>
-                        <ul>
-                            <li><a href="#" className='bg-light p-3 rounded btn'><strong>Book consultation for free</strong></a></li>
-                            <li><a href="#" className='btn bg-secondary white'>Facebook</a></li>
-                            <li><a href="#" className='btn bg-secondary white'>Instagram</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                    <div className="col-md-4 col-sm-12"> <img src="images/iphone-screen.png" className="img-fluid wow fadeInUp"/> </div>
+            <main>
+                <div>
+                    <Outlet />
                 </div>
-                </div>
-            </div>
-            <span className="svg-wave"> <img className="svg-hero" src="images/applight-wave.svg" /> </span> </section>
-
-            {/* Banner End  */}
-
-            {/* About End */}
-                < About />
-
-
-            {/* Features Start */}
-                < Features />
-
-            {/* Works     */}
-                < Works />
-
-            {/* Team Start */}
-                < Team />
-
-
-            {/* Testimonial Start */}
-                < Testimonial />
-
-
-            {/* FAQ Start */}
-                < Faq />
-
-            {/* Contact Start */}
-                < Contact />
-
-
-
-                < Footer />
+            </main>
+                
+            <footer className="footer-copy">
+                <section className="download section-padding">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="sectioner-header text-center white">
+                                <h3>Explore, Connect, Inspire: Your Journey with Cajitech</h3>
+                                <span className="line"></span>
+                                <p className="white">Thank you for exploring our world! Cagitech is more than a website; it's a community where inspiration meets innovation. If you have questions, suggestions, or just want to chat, we're here for you. Your journey with us is the heartbeat of our mission. Stay connected, stay inspired, and thank you for being a part of Cajitech.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-12">
+                                <div className="section-content text-center">
+                                <ul>
+                                    <li><a href="#" className='btn bg-secondary white'>Facebook</a></li>
+                                    <li><a href="#" className='btn bg-secondary white'>Instagram</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container-fluid">
+                        <div className="row">
+                        <div className="col-md-12">
+                            <h5>&copy; 2024 Cajitech. All rights reserved.</h5>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
 
             
 
