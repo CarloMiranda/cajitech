@@ -11,7 +11,7 @@ import { Team } from './Team';
 import { Testimonial } from './Testimonial';
 import { Faq } from './Faq';
 import { Contact } from './Contact';
-import { Footer } from './footer';
+import { Footer } from './Footer';
 
 
 export const Layout = () => {
@@ -122,7 +122,7 @@ export const Layout = () => {
 
 
 
-            < Footer />
+                < Footer />
 
             
 
