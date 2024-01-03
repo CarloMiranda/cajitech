@@ -28,11 +28,13 @@ export const Home = () => {
                                 <p className="banner-text white">Ready to Elevate Your Brand? Let's Create Something Exceptional Together!</p>
                                 <div className="row">
                                     <ul>
-                                        <li><a href="#" className='bg-light p-3 rounded btn' data-aos="fade-right" data-aos-duration="3000"><strong>Book consultation for free <FaExternalLinkAlt className="mx-2" /></strong></a></li>
+                                        <li>
+                                            <a href="#" className='bg-light mx-3 p-3 rounded btn' data-aos="fade-right" data-aos-duration="3000"><strong>Book consultation for free <FaExternalLinkAlt className="mx-2" /></strong></a>
+                                        </li>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" className='facebook-btn' data-aos="fade-right" data-aos-duration="2000"><FaFacebook /></a></li>
-                                        <li><a href="#" className='instagram-btn btn'><FaInstagram/></a></li>
+                                        <li><a href="#" className='facebook-btn mt-1' data-aos="fade-right" data-aos-duration="2000"><FaFacebook /></a></li>
+                                        <li><a href="#" className='instagram-btn btn mt-1' data-aos="fade-right" data-aos-duration="1000"><FaInstagram/></a></li>
                                     </ul>
                                 </div>
                             </div>
