@@ -20,19 +20,19 @@ export const About = () => {
                         <div className="col-md-4">
                         <div className="icon-box wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in" data-aos-duration="2000"> <i aria-hidden="true"><FontAwesomeIcon className='icon' icon={faPhone} /></i> 
                             <h5>Support</h5>
-                            <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                            <p>We pride ourselves on providing unparalleled support, ensuring that every step of your journey is met with dedicated assistance and expertise.</p>
                         </div>
                         </div>
                         <div className="col-md-4">
                         <div className="icon-box wow fadeInUp" data-wow-delay="0.4s" data-aos="zoom-in" data-aos-duration="2500"> <i aria-hidden="true"><FontAwesomeIcon className='icon' icon={faMobile} /></i>
                             <h5>Cross Platform</h5>
-                            <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                            <p>Our commitment to cross-platform excellence means that your experiences seamlessly transcend device boundaries, offering a unified and cohesive interaction.</p>
                         </div>
                         </div>
                         <div className="col-md-4">
                         <div className="icon-box wow fadeInUp" data-wow-delay="0.6s" data-aos="zoom-in" data-aos-duration="3000"> <i className="fa fa-bolt" aria-hidden="true"><FontAwesomeIcon className='icon' icon={faBolt} /></i>
                             <h5>Fast</h5>
-                            <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                            <p>In the realm of speed, Cajitech sets the pace, delivering solutions that are not just efficient but empower you to navigate through innovation swiftly and effortlessly.</p>
                         </div>
                         </div>
                     </div>

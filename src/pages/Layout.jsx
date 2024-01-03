@@ -136,13 +136,7 @@ export const Layout = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="container-fluid">
-                        <div className="row">
-                        <div className="col-md-12">
-                            <h5>&copy; 2024 Cajitech. All rights reserved.</h5>
-                        </div>
-                        </div>
-                    </div>
+                        <h5 className='mt-5 white'>&copy; 2024 Cajitech. All rights reserved.</h5>                        
                 </section>
                 <ScrollToTopButton />
             </footer>

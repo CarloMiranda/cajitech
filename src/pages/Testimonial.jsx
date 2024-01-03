@@ -10,7 +10,7 @@ export const Testimonial = () => {
             <div className="sectioner-header text-center white">
               <h1>Testimonials</h1>
               <span className="line"></span>
-              <p className="white">Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+              <p className="white">Turning dreams into digital reality, one satisfied client at a time – because your success is our success.</p>
             </div>
         
           <div className="section-content">
@@ -24,7 +24,7 @@ export const Testimonial = () => {
                 </div>
                 <div className='col-md-6 ' data-aos="zoom-up" data-aos-duration="3000"> 
                     <div className='bg-light rounded p-3 my-3'>
-                        <h4>Steve Smith App</h4>
+                        <h4>Steve Smith</h4>
                         <h6>Professor</h6>
                         <p>Euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v</p>
                     </div>

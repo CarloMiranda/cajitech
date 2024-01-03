@@ -33,7 +33,7 @@ export const Home = () => {
                                         </li>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" className='facebook-btn mt-1' data-aos="fade-right" data-aos-duration="2000"><FaFacebook /></a></li>
+                                        <li><a href="#" className='facebook-btn mt-1 ml-3' data-aos="fade-right" data-aos-duration="2000"><FaFacebook /></a></li>
                                         <li><a href="#" className='instagram-btn btn mt-1' data-aos="fade-right" data-aos-duration="1000"><FaInstagram/></a></li>
                                     </ul>
                                 </div>
