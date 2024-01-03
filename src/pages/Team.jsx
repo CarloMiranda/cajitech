@@ -3,7 +3,7 @@ export const Team = () => {
 
     return(
         <section className="team section-padding" data-scroll-index='3'>
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">

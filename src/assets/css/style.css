@@ -3,6 +3,9 @@
 	padding:0;
 	margin:0;
 }
+html,body {
+    overflow-x: hidden;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
@@ -250,12 +253,6 @@ h6 {
 
 .img-wrapper:hover > img {transform: scale(1.4);}
 
-.work-btn {
-	border: #8e1efc 2px solid;
-	color: #8e1efc;
-	padding: 10 10px;
-	border-radius: 5px;
-}
 .video-section {
 	background: url(images/video-bg.jpg) no-repeat fixed center;
 	background-size: cover;
@@ -613,4 +610,55 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+}.scroll-to-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width:50px;
+    height:50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #5f0099;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+.scroll-to-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.scroll-to-top-button:hover {
+    background-color: #8e1efc;
+}
+.facebook-btn {
+	background: #2388ed;
+	border-radius: 10px;
+	color: #fafafa;
+	font-size: 30px;
+	padding: 0 8px 5px 8px;
+}
+.instagram-btn {
+	border-radius: 10px;
+	color: #fafafa;
+	font-size: 30px;
+	padding: 0 8px 5px 8px;
+	background: rgb(236,47,142);
+	background: -moz-linear-gradient(157deg, rgba(236,47,142,1) 11%, rgba(214,61,61,1) 34%, rgba(237,80,28,1) 50%, rgba(185,167,86,1) 57%, rgba(252,97,66,1) 63%, rgba(200,11,11,1) 100%);
+	background: -webkit-linear-gradient(157deg, rgba(236,47,142,1) 11%, rgba(214,61,61,1) 34%, rgba(237,80,28,1) 50%, rgba(185,167,86,1) 57%, rgba(252,97,66,1) 63%, rgba(200,11,11,1) 100%);
+	background: linear-gradient(157deg, rgba(236,47,142,1) 11%, rgba(214,61,61,1) 34%, rgba(237,80,28,1) 50%, rgba(185,167,86,1) 57%, rgba(252,97,66,1) 63%, rgba(200,11,11,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ec2f8e",endColorstr="#c80b0b",GradientType=1);
+}
+.facebook-btn:hover,
+.instagram-btn:hover {color: #000000;}
+

@@ -5,7 +5,7 @@ export const Contact = () => {
 
     return(
         <section className="contact section-padding" data-scroll-index='6'>
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">

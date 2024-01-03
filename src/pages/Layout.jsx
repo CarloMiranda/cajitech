@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { Outlet, Link, useLocation } from "react-router-dom";
+import ScrollToTopButton from "./ScrollToTopButton";
 import logo from '/public/images/logo.png';
 import logoBlack from '/public/images/logo-black.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 
 
@@ -38,6 +40,29 @@ export const Layout = () => {
             window.removeEventListener("scroll", handleScroll);
         };
         }, []); 
+
+
+        
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            document.title = 'Home | Cajitech';
+        } else if (location.pathname === '/contact') {
+            document.title = 'Contact | Cajitech';
+        } else if (location.pathname === '/about') {
+            document.title = 'About | Cajitech';
+        } else if (location.pathname === '/works') {
+            document.title = 'Works | Cajitech';
+        } else if (location.pathname === '/features') {
+            document.title = 'Features | Cajitech';
+        } else if (location.pathname === '/team') {
+            document.title = 'Team | Cajitech';
+        } else if (location.pathname === '/testimonials') {
+            document.title = 'Testimonials | Cajitech';
+        } else if (location.pathname === '/faq') {
+            document.title = 'FAQ | Cajitech';
+        }
+    }, [location]);
 
 
     return(
@@ -104,8 +129,8 @@ export const Layout = () => {
                             <div className="col-md-12">
                                 <div className="section-content text-center">
                                 <ul>
-                                    <li><a href="#" className='btn bg-secondary white'>Facebook</a></li>
-                                    <li><a href="#" className='btn bg-secondary white'>Instagram</a></li>
+                                    <li><a href="#" className='facebook-btn btn' data-aos="fade-up" data-aos-duration="2000">< FaFacebook/></a></li>
+                                    <li><a href="#" className='instagram-btn btn' data-aos="fade-up" data-aos-duration="3000"><FaInstagram/></a></li>
                                 </ul>
                                 </div>
                             </div>
@@ -119,10 +144,8 @@ export const Layout = () => {
                         </div>
                     </div>
                 </section>
+                <ScrollToTopButton />
             </footer>
-
-            
-
         </div>
     )
 }

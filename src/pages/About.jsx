@@ -1,11 +1,13 @@
-
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faMobile, faBolt } from '@fortawesome/free-solid-svg-icons';
 
 export const About = () => {
 
 
     return(
         <section className="about section-padding prelative" data-scroll-index='1'>
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
                 <div className="col-md-12">
                     <div className="sectioner-header text-center">
@@ -16,19 +18,19 @@ export const About = () => {
                     <div className="section-content text-center">
                     <div className="row">
                         <div className="col-md-4">
-                        <div className="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i className="fa fa-life-ring" aria-hidden="true"></i>
+                        <div className="icon-box wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in" data-aos-duration="2000"> <i aria-hidden="true"><FontAwesomeIcon className='icon' icon={faPhone} /></i> 
                             <h5>Support</h5>
                             <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
                         </div>
                         </div>
                         <div className="col-md-4">
-                        <div className="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i className="fa fa-mobile" aria-hidden="true"></i>
+                        <div className="icon-box wow fadeInUp" data-wow-delay="0.4s" data-aos="zoom-in" data-aos-duration="2500"> <i aria-hidden="true"><FontAwesomeIcon className='icon' icon={faMobile} /></i>
                             <h5>Cross Platform</h5>
                             <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
                         </div>
                         </div>
                         <div className="col-md-4">
-                        <div className="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i className="fa fa-bolt" aria-hidden="true"></i>
+                        <div className="icon-box wow fadeInUp" data-wow-delay="0.6s" data-aos="zoom-in" data-aos-duration="3000"> <i className="fa fa-bolt" aria-hidden="true"><FontAwesomeIcon className='icon' icon={faBolt} /></i>
                             <h5>Fast</h5>
                             <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
                         </div>
