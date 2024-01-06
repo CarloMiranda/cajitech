@@ -22,10 +22,9 @@ export const Home = () => {
                     <div className="row">
                         <div className="col-md-8 col-sm-12">
                             <div className="banner-text">
-                                <h2 className="white">Welcome to Cajitech's Creative Haven 🚀</h2>
-                                <h6 className="white">Transforming Ideas into Extraordinary Experiences</h6>
-                                <p className="banner-text white">Your vision, our passion! We specialize in crafting unique digital solutions tailored just for you. Explore our portfolio and let's embark on a journey to bring your dreams to life.</p>
-                                <p className="banner-text white">Ready to Elevate Your Brand? Let's Create Something Exceptional Together!</p>
+                                <h1 className="white" data-aos="zoom-in" data-aos-duration="1000">Welcome to Cajitech</h1>
+                                <h4 className="white" data-aos="zoom-in" data-aos-duration="2000">Transforming Ideas into Extraordinary Experiences</h4>
+                                <h5 className="banner-text white mb-5" data-aos="zoom-in" data-aos-duration="3000">Ready to Elevate Your Brand? Let's Create Something Exceptional Together!</h5>
                                 <div className="row">
                                     <ul>
                                         <li>

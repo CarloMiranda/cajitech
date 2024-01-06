@@ -8,10 +8,12 @@ export const Works = () => {
         <section className="work section-padding prelative" data-scroll-index='5'>
                 <div className="row mt-5">
                     <div className="col-md-12">
-                        <div className="sectioner-header text-center">
-                        <h1>Explore Our Masterpieces</h1>
-                        <span className="line"></span>
-                        <p>Step into a realm of innovation and creativity as you explore our latest works. Each project is a testament to our commitment to excellence, showcasing unique solutions that redefine industry standards. Dive into a world where imagination meets expertise, and discover the extraordinary in every detail.</p>
+                        <div className="container">  
+                            <div className="sectioner-header text-center">
+                                <h1>Explore Our Masterpieces</h1>
+                                <span className="line"></span>
+                                <p>Step into a realm of innovation and creativity as you explore our latest works. Each project is a testament to our commitment to excellence, showcasing unique solutions that redefine industry standards.</p>
+                            </div>
                         </div>
                         <div className="section-content">
                             <section class="work-section prelative text-center white">
