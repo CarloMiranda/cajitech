@@ -22,7 +22,7 @@ export const Home = () => {
                     <div className="row">
                         <div className="col-md-8 col-sm-12">
                             <div className="banner-text">
-                                <h1 className="white" data-aos="zoom-in" data-aos-duration="1000">Welcome to Cajitech</h1>
+                                <h1 className="white" data-aos="zoom-in" data-aos-duration="1000">Welcome to Cajitech!</h1>
                                 <h4 className="white" data-aos="zoom-in" data-aos-duration="2000">Transforming Ideas into Extraordinary Experiences</h4>
                                 <h5 className="banner-text white mb-5" data-aos="zoom-in" data-aos-duration="3000">Ready to Elevate Your Brand? Let's Create Something Exceptional Together!</h5>
                                 <div className="row">
@@ -38,7 +38,7 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="3000"> <img src="images/iphone-screen.png" className="img-fluid wow fadeInUp"/> </div>
+                        <div className="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="3000"> <img src="images/iphone-screen.png" className="img-fluid"/> </div>
                     </div>
                     </div>
                 </div>

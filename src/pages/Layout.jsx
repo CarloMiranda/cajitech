@@ -136,7 +136,7 @@ export const Layout = () => {
                             </div>
                         </div>
                     </div>
-                        <h5 className='mt-5 whitenpm run '>&copy; 2024 Cajitech. All rights reserved.</h5>                        
+                        <h5 className='mt-5 '>&copy; 2024 Cajitech. All rights reserved.</h5>                        
                 </section>
                 <ScrollToTopButton />
             </footer>

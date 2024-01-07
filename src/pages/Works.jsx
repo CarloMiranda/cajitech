@@ -16,9 +16,9 @@ export const Works = () => {
                             </div>
                         </div>
                         <div className="section-content">
-                            <section class="work-section prelative text-center white">
-                                <div class="section-padding work-overlay">
-                                    <div class="container">
+                            <section className="work-section prelative text-center white">
+                                <div className="section-padding work-overlay">
+                                    <div className="container">
                                         <div className="row shadow bg-light black mb-5 p-4 rounded" data-aos="flip-down" data-aos-duration="3000">
                                             <div className="project-text col-md-6 pt-4 pt-3">
                                                 <div className='pt-3'>
